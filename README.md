@@ -6,6 +6,7 @@ This is a basic example of how to implement OAT authentification with AdonisJS v
 ## Features
 - Register a new user
 - Login a user
+- Logout the current user
 - Get user details
 
 ## Installation

@@ -6,7 +6,7 @@ const AuthController = () => import('#controllers/auth_controller')
 router.group(() => {
   router.post('register', [AuthController, 'register'])
   router.post('login', [AuthController, 'login'])
-  router.post('logout', [AuthController, 'logout'])
+  router.post('logout', [AuthController, 'logout']).use(middleware.auth())
 }).prefix('user')
 
 router.get('me', async ({ auth, response }) => {
