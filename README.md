@@ -33,4 +33,6 @@ node ace serve
 
 ## Steps explanation
 
-[Read the tutorial (in french)](https://medium.com/p/83c97387a39b)
+[🇬🇧 Read the tutorial](https://medium.com/@maximemrf/authentication-with-adonisjs-v6-and-access-token-oat-6c8029827562)
+
+[🇫🇷 Lire le tutoriel](https://medium.com/@maximemrf/authentification-avec-adonisjs-v6-et-access-token-oat-83c97387a39b)
