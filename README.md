@@ -31,6 +31,29 @@ cp .env.example .env
 node ace serve
 ```
 
+## Deploy to docker
+
+1. Build the image
+```bash
+docker build -t oat-tutorial .
+```
+
+2. Run the container
+```bash
+docker run -d --env-file .env.prod -p 3333:3333 oat-tutorial:latest
+```
+Save the container id to access it
+
+3. Run the migrations manually
+```bash
+docker exec -it <container_id> /bin/bash
+# when you are inside the container
+node ./bin/console.js migration:run --force
+# then exit the container with ctrl + d
+```
+
+Now you can access the server on `http://localhost:3333` 🚀
+
 ## Steps explanation
 
 [🇬🇧 Read the tutorial](https://medium.com/@maximemrf/authentication-with-adonisjs-v6-and-access-token-oat-6c8029827562)
